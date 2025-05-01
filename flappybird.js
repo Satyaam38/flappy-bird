@@ -82,6 +82,8 @@ birdimages.push(birdimage);
     setInterval(placePipes,1500);
     setInterval(imageload,100);
     document.addEventListener("keydown",movebird);
+    document.addEventListener("click",movebird);
+
 
 }
 function imageload(){
@@ -156,7 +158,7 @@ function placePipes(){
 }
 
 function movebird(e){
-    if(e.code == "Space"){
+    if(e.code == "Space" || e.button === 0){
     velocityy = -4;
     //Wingsound.play();
     if(Gameover){
