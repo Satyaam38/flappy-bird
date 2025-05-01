@@ -29,9 +29,9 @@ let pipex=boardwidth;
 let pipey=0;
 
 //physics
-let velocityx=-2;
+let velocityx=-1.8;
 let velocityy=0;
-let gravity=0.3;
+let gravity=0.2;
 
 //gameover
 let Gameover=false;
